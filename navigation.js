@@ -2,7 +2,7 @@ document.write('\
 \
 <nav>\
 <ul>\
-   <li><a href="/index.html">Home</a></li>\
+   <li><a href="//OpenTOPAS.github.io/index.html">Home</a></li>\
    <li><a href="/OpenTOPAS.github.io/collaborators.html">Collaborators</a></li>\
    <li><a href="/OpenTOPAS.github.io/publications.html">Publications</a></li>\
    <li><a href="/OpenTOPAS.github.io/download.html" >Download</a></li>\
