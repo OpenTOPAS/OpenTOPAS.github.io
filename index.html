@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenTOPAS - Home</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+
+  <style>
+    header {
+         background-image: url("./Images/Index/titlebackground.png");
+         background-size: cover;
+         background-position: center;
+    }
+
+    body {
+         font-family: Arial, Helvetica, sans-serif;
+         margin: 0;
+   }
+
+  </style>
 </head>
+
+<script src="navigation.js"></script>
 
 <header>
         <h1>OpenTOPAS</h1>
@@ -14,12 +30,14 @@
         <h3>Welcome to the OpenTOPAS official site!</h3>
 </header>
 
-<script src="navigation.js"></script>
 
 <body>
     <div class="maintext">
         <h3>What is OpenTOPAS ?</h3>
         <p> 
+            The NIH-funded TOPAS project made radiation therapy simulations using the Monte Carlo method easily accessible 
+            for the radiotherapy community. The code has been released previously as open source. This repository brings TOPAS to a new, 
+            open release stage, called OpenTOPAS. <br><br>
             OpenTOPAS wraps and extends the Geant4 Simulation Toolkit to provide an easier-to-use application for the medical physicist. 
             OpenTOPAS’s unique parameter control system lets you assemble and control a rich library of simulation objects (geometry components, 
             particle sources, scorers, etc.) with no need to write C++ code and without knowledge of the underlying Geant4 Simulation Toolkit. 
@@ -43,9 +61,9 @@
         <p> 
             Please cite these two key references when using Open TOPAS: <br>
             <ul>
+                <li> B Faddegon, J Ramos-Méndez, J Schümann, A McNamara, J Shin, J Perl, H Paganetti. "The TOPAS Tool for Particle Simulation, a Monte Carlo Simulation Tool for Physics, Biology and Clinical Research." Phys Med. 2020 Apr 02; 72:114-121. PMID: 32247964. PMCID: PMC7192305</li>
                 <li>Perl, J Shin, J Schümann,  B Faddegon, H Paganetti. "TOPAS: an innovative proton Monte Carlo platform for research and clinical applications." Med Phys. 2012 Nov; 39(11):6818-37.</li>
                 <br>
-                <li> B Faddegon, J Ramos-Méndez, J Schümann, A McNamara, J Shin, J Perl, H Paganetti. "The TOPAS Tool for Particle Simulation, a Monte Carlo Simulation Tool for Physics, Biology and Clinical Research." Phys Med. 2020 Apr 02; 72:114-121. PMID: 32247964. PMCID: PMC7192305</li>
             </ul>
         </p>
     </div>
