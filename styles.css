@@ -36,7 +36,7 @@ header {
 
 /* this is the navigation bar with main tags */
 nav {
-    background-color: #4a90e2; 
+    background-color: #000000;
     padding-block: 10px;
 }
 /* and the tags */
@@ -55,8 +55,7 @@ nav ul li a {
     display: block;
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     padding: 10px;  
     
 }
@@ -96,6 +95,7 @@ footer {
     background-color: #4a90e2;
     color: #fff;
     text-align: center;
+    font-size: 14px;
     padding-block: 20px;
     
 }
