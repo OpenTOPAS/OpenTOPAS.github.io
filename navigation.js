@@ -2,6 +2,7 @@ document.write('\
 \
 <nav>\
 <ul>\
+   <img src="Images/Index/Logo.png" alt="">\
    <li><a href="./index.html">Home</a></li>\
    <li><a href="./collaborators.html">Collaborators</a></li>\
    <li><a href="./publications.html">Publications</a></li>\

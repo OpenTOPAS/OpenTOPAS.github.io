@@ -40,6 +40,12 @@ nav {
     padding-block: 10px;
 }
 /* and the tags */
+
+nav ul img {
+  height: 50px;
+  float: left;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
