@@ -2,7 +2,7 @@ document.write('\
 \
 <nav>\
 <ul>\
-   <a href="https://opentopas.github.io/index.html"><img src="Images/Index/Logo.png" alt=""></a>\
+   <li><a href="./index.html"><img src="Images/Index/Logo.png" alt=""></a></li>\
    <li><a href="./index.html">Home</a></li>\
    <li><a href="./collaborators.html">Collaborators</a></li>\
    <li><a href="./publications.html">Publications</a></li>\
