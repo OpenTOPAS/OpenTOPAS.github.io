@@ -1,87 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenTOPAS - Collaborators</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Collaborators | Open TOPAS</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1>
+          <a class="logo-mark" href="index.html" aria-label="Open TOPAS home">
+            <img src="assets/img/Logo.png" alt="" />
+          </a>
+        </h1>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="primary-nav" class="nav-links" aria-label="Secondary navigation">
+          <a href="collaborators.html" aria-current="page">Collaborators</a>
+          <a href="download.html">Download</a>
+          <a href="documentation.html">Documentation</a>
+          <a href="news.html">News</a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-inner" style="padding:4rem 1.5rem 3rem;">
+        <h2>Core Collaborators</h2>
+        <p>
+          OpenTOPAS is jointly maintained by interdisciplinary teams at the University of California San Francisco and
+          Massachusetts General Hospital / Harvard Medical School. Each site contributes physics leadership, code
+          development, validation, and user support.
+        </p>
 
-<script src="navigation.js"></script>
-
-<header>
-    <h3>OpenTOPAS - Collaborators</h3>
-</header>
-
-<body>
-    <div class="maintext">
-
-        <div class="row">
-            <div class="column" >
-
-                <img src="./Images/Collaborators/UCSF_logo.png" height="150">
-                <h2>Univeristy of California San Francisco </h2>
-                
-                <u>Current collaborators:</u> <br> <br>
-                <b>Bruce Faddegon (PI 2018-2024)</b> <br>
-                <br>
-                <b>José Ramos-Méndez</b> <br>
-                <br>
-                Naoki D-Kondo <br>
-                Ramon Ortiz <br>
-                Thongchai Masilela <br>
-                <br>
-                
-                <u>Former collaborators:</u> <br> <br>
-                Daren Sawkey <br>
-                Jhonatan Carrasco Hernandez <br>
-                Jungwook Shin <br>
-                Kyungdon Choi <br>
-                Lucas Burigo <br>
-                Pierluigi Piersimoni <br>
-                
+        <div class="collab-grid">
+          <article class="collab-card">
+            <div>
+              <img class="collab-logo" src="assets/img/UCSF_logo.png" alt="University of California San Francisco logo" />
+              <h3>University of California San Francisco</h3>
+              <p class="collab-role">Core Maintainers</p>
+              <ul>
+                <li>Bruce Faddegon (PI 2018-2024)</li>
+                <li>José Ramos-Méndez</li>
+                <li>Thongchai Masilela</li>
+                <li>Naoki D-Kondo</li>
+                <li>Ramon Ortiz</li>
+              </ul>
             </div>
-            <div class="column">
+          </article>
 
-                <img src="./Images/Collaborators/MGH-Harvard_logo.png" height="150">
-                <h2>Massachusetts General Hospital, Harvard Medical School </h2>
-                
-                <u>Current collaborators:</u> <br> <br>
-                <b>Harald Paganetti (PI 2009-2016)</b> <br>
-                <br>
-                <b>Jan Schuemann</b> <br>
-                <br>
-                Alejandro Bertolet <br>
-                Victor V. Onecha <br>
-                Wook-Geun Shin <br>
-                <br>
-                
-                <u>Former collaborators:</u> <br> <br>
-                Aimee McNamara <br>
-                Alejandro Carabe-Fernández <br>
-                Andrea Attili <br>
-                David Hall <br>
-                David J Carlson <br>
-                Giulia Tamborino <br>
-                Hongyu Zhu <br>
-                Hoyeon Lee <br>
-                Hsiao-Ming Lu <br>
-                Ilaria Rinaldi <br>
-                Isaac Meyer <br>
-                Jungwook Shin <br>
-                Kira Grogg <br>
-                Lisa Polster <br>
-                Mauro Testa <br>
-                Nils Peters <br>
-                Robert Stewart <br>
-                Wonmo Sung <br>
-                Yizheng Chen <br>
-
+          <article class="collab-card">
+            <div>
+              <img class="collab-logo" src="assets/img/MGH-Harvard_logo.png" alt="Massachusetts General Hospital Harvard Medical School logo" />
+              <h3>Massachusetts General Hospital<br />Harvard Medical School</h3>
+              <p class="collab-role">Core Maintainers</p>
+              <ul>
+                <li>Harald Paganetti (PI 2009-2016)</li>
+                <li>Jan Schuemann</li>
+                <li>Alejandro Bertolet</li>
+                <li>Victor V. Onecha</li>
+                <li>Wook-Geun Shin</li>
+              </ul>
             </div>
-    </div>
+          </article>
+        </div>
 
-</body>
+        <div class="collab-grid former-grid">
+          <article class="collab-card">
+            <div>
+              <h3>Former Contributors · UCSF</h3>
+              <ul class="compact-list">
+                <li>Daren Sawkey</li>
+                <li>Jhonatan Carrasco Hernandez</li>
+                <li>Jungwook Shin</li>
+                <li>Kyungdon Choi</li>
+                <li>Lucas Burigo</li>
+                <li>Pierluigi Piersimoni</li>
+              </ul>
+            </div>
+          </article>
 
-<script src="footer.js"></script>
-
+          <article class="collab-card">
+            <div>
+              <h3>Former Contributors · MGH / Harvard</h3>
+              <ul class="compact-list">
+                <li>Aimee McNamara</li>
+                <li>Alejandro Carabe-Fernández</li>
+                <li>Andrea Attili</li>
+                <li>David Hall</li>
+                <li>David J Carlson</li>
+                <li>Giulia Tamborino</li>
+                <li>Hongyu Zhu</li>
+                <li>Hoyeon Lee</li>
+                <li>Hsiao-Ming Lu</li>
+                <li>Ilaria Rinaldi</li>
+                <li>Isaac Meyer</li>
+                <li>Jungwook Shin</li>
+                <li>Kira Grogg</li>
+                <li>Lisa Polster</li>
+                <li>Mauro Testa</li>
+                <li>Nils Peters</li>
+                <li>Robert Stewart</li>
+                <li>Wonmo Sung</li>
+                <li>Yizheng Chen</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <small>© <span id="year"></span> Open TOPAS · MIT License</small>
+    </footer>
+    <script src="assets/site.js"></script>
+  </body>
 </html>

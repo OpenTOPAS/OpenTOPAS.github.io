@@ -1,72 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOPAS - Download</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
-</head>
-
-<script src="navigation.js"></script>
-
-<header>
-    <h3>OpenTOPAS - Download</h3>
-</header>
-
-<body>
-    <div class="maintext">
-        
-        <h2>Source code:</h2>
-        
-        <a href="https://github.com/OpenTOPAS/topas" target="_blank" class="button">Github repository</a>
-
-        <h2>Docker:</h2>
-        
-        TOPAS is also available as <b>Docker</b> images (under testing).
-        <a href="https://hub.docker.com/repository/docker/opentopas/opentopas/general" target="_blank" class="button">Docker</a>
-
-        <h2>TOPAS courses:</h2>
-        
-        A TOPAS introductory video prepared as part of the <a href="https://www.cancer.gov/about-nci/organization/cssi/resources/informatics-tools" target="_blank"> TOPAS 2018-2024 ITCR grant </a> 
-        may be found <a href="https://ucsf.app.box.com/s/nak3eln8ehxzue9gnag7e98c4jma3tka" target="_blank"> here</a>.
-
-        <br><br>
-
-        Furthermore, the November 2021 3-day course conducted by the TOPAS collaboration was recorded. Course videos may be viewed 
-        <a href="https://ucsf.app.box.com/folder/262804016737?s=x4hdonmehd90t9aosxibxru12abkrx2s" target="_blank"> here</a>. Parameter Control Files for the examples are part of the TOPAS distribution.
-    
-        <h3>License</h3>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Download | Open TOPAS</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1>
+          <a class="logo-mark" href="index.html" aria-label="Open TOPAS home">
+            <img src="assets/img/Logo.png" alt="" />
+          </a>
+        </h1>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="primary-nav" class="nav-links" aria-label="Secondary navigation">
+          <a href="collaborators.html">Collaborators</a>
+          <a href="download.html" aria-current="page">Download</a>
+          <a href="documentation.html">Documentation</a>
+          <a href="news.html">News</a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-inner" style="padding:4rem 1.5rem 3rem;">
+        <h2>Download Center</h2>
         <p>
-            <small>
-            Copyright 2024 The TOPAS Collaboration                       
-            Copyright 2022 The TOPAS Collaboration                           
-            Permission is hereby granted, free of charge, to any person      
-            obtaining a copy of this software and associated documentation  
-            files (the "Software"), to deal in the Software without          
-            restriction, including without limitation the rights to use,     
-            copy, modify, merge, publish, distribute, sublicense, and/or     
-            sell copies of the Software, and to permit persons to whom the   
-            Software is furnished to do so, subject to the following         
-            conditions:                                                      
-            <br>                                                          
-            The above copyright notice and this permission notice shall be   
-            included in all copies or substantial portions of the Software.  
-            <br>                                                          
-            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,  
-            EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES  
-            OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND         
-            NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT      
-            HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,     
-            WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING     
-            FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR    
-            OTHER DEALINGS IN THE SOFTWARE. 
-            </small>
+          Choose the distribution that suits your needs.
         </p>
-    
-    </div>
-    
-</body>
 
-<script src="footer.js"></script>
+        <div class="grid">
+          <article class="card link-card" data-href="https://github.com/OpenTOPAS" tabindex="0">
+            <h4>OpenTOPAS Organization</h4>
+            <p>
+              Browse the TOPAS echosystem, release, and issue tracker inside the official GitHub organization.
+            </p>
+            <p><a href="https://github.com/OpenTOPAS" target="_blank" rel="noopener">github.com/OpenTOPAS →</a></p>
+          </article>
 
+          <article class="card link-card" data-href="https://hub.docker.com/repository/docker/opentopas/opentopas/general" tabindex="0">
+            <h4>Docker Image</h4>
+            <p>
+              Pull the ready-to-run container from Docker Hub for reproducible environments and CI pipelines.
+            </p>
+            <p><a href="https://hub.docker.com/repository/docker/opentopas/opentopas/general" target="_blank" rel="noopener">Docker Hub repository →</a></p>
+          </article>
+
+          <article class="card link-card" data-href="https://ucsf.app.box.com/folder/262804016737?s=x4hdonmehd90t9aosxibxru12abkrx2s" tabindex="0">
+            <h4>TOPAS Courses</h4>
+            <p>
+              Access previous online course materials, for instructor-led or self-paced learning.
+            </p>
+            <p><a href="https://ucsf.app.box.com/folder/262804016737?s=x4hdonmehd90t9aosxibxru12abkrx2s" target="_blank" rel="noopener">Course archive on Box →</a></p>
+          </article>
+
+          <article class="card link-card" data-href="https://ucsf.app.box.com/s/nak3eln8ehxzue9gnag7e98c4jma3tka" tabindex="0">
+            <h4>Introductory Video</h4>
+            <p>
+              Watch the grant-funded overview recorded during the 2018-2024 ITCR program to see OpenTOPAS in action.
+            </p>
+            <p>
+              <a href="https://ucsf.app.box.com/s/nak3eln8ehxzue9gnag7e98c4jma3tka" target="_blank" rel="noopener">View the intro video →</a><br />
+              <small>Produced as part of the <a href="https://www.cancer.gov/about-nci/organization/cssi/resources/informatics-tools" target="_blank" rel="noopener">NCI ITCR initiative</a>.</small>
+            </p>
+          </article>
+
+          <article class="card license-card">
+            <h4>License & Usage</h4>
+            <p>
+              OpenTOPAS is released under the MIT License. You may use, copy, modify, merge, publish, distribute,
+              sublicense, and/or sell copies of the Software, provided that the copyright notice below appears in all
+              copies or substantial portions of the Software.
+            </p>
+            <p class="license-text">
+              <strong>Copyright 2025 The TOPAS Collaboration</strong><br />
+              <strong>Copyright 2022 The TOPAS Collaboration</strong><br /><br />
+              Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+              associated documentation files (the “Software”), to deal in the Software without restriction, including
+              without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+              copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the
+              following conditions:<br /><br />
+              The above copyright notice and this permission notice shall be included in all copies or substantial
+              portions of the Software.<br /><br />
+              THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+              LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+              EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+              IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+              THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <small>© <span id="year"></span> Open TOPAS · MIT License</small>
+    </footer>
+    <script src="assets/site.js"></script>
+  </body>
 </html>

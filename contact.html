@@ -1,37 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenTOPAS - Contact</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
-</head>
-
-<script src="navigation.js"></script>
-
-<header>
-    <h3>OpenTOPAS - Contact</h3>
-</header>
-
-<body>
-    <div class="maintext">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Open TOPAS</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1>
+          <a class="logo-mark" href="index.html" aria-label="Open TOPAS home">
+            <img src="assets/img/Logo.png" alt="" />
+          </a>
+        </h1>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="primary-nav" class="nav-links" aria-label="Secondary navigation">
+          <a href="collaborators.html">Collaborators</a>
+          <a href="download.html">Download</a>
+          <a href="documentation.html">Documentation</a>
+          <a href="news.html">News</a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-inner" style="padding:4rem 1.5rem 3rem;">
+        <h2>Contact & Support</h2>
         <p>
-            
-            <b>We strongly recommend users to use the <a href="https://github.com/OpenTOPAS/topas/discussions" target="_blank">User forum</a>, 
-                where all OpenTOPAS collaborators and other users will be able to respond to issues, questions, or comments.</b>  
-            <br><br>
-            <br><br>
-            <br><br>
-
-            For other matters, please contact the current OpenTOPAS project supervisors : <br> <br>
-            José Ramos-Méndez, UCSF <br><br>
-            Jan Schuemann, MGH
-
+          Reach the OpenTOPAS community via our public forum or contact the current project supervisors directly.
         </p>
-    </div>
-    
-</body>
-
-<script src="footer.js"></script>
-
+        <div class="grid">
+          <article class="card link-card" data-href="https://github.com/OpenTOPAS/topas/discussions" tabindex="0">
+            <h4>User Forum</h4>
+            <p>
+              Join the GitHub Discussions board to ask questions, share workflows, or browse previously answered
+              threads.
+            </p>
+            <p><a href="https://github.com/OpenTOPAS/topas/discussions" target="_blank" rel="noopener">OpenTOPAS User Forum →</a></p>
+          </article>
+          <article class="card link-card" data-href="https://github.com/OpenTOPAS/OpenTOPAS/issues" tabindex="0">
+            <h4>Security</h4>
+            <p>
+              Report vulnerabilities via the main issue tracker—use the security template, include reproduction steps,
+              and reference affected commits or configurations.
+            </p>
+            <p><a href="https://github.com/OpenTOPAS/OpenTOPAS/issues" target="_blank" rel="noopener">OpenTOPAS Issues →</a></p>
+          </article>
+          <article class="card">
+            <h4>Press & Partnerships</h4>
+            <p>
+              For other matters, please contact the current OpenTOPAS project supervisors:
+            </p>
+            <ul class="contact-list">
+              <li>José Ramos-Méndez · UCSF</li>
+              <li>Jan Schuemann · MGH</li>
+            </ul>
+            <p>Email introductions via the user forum or your existing collaboration channels.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <small>© <span id="year"></span> Open TOPAS · MIT License</small>
+    </footer>
+    <script src="assets/site.js"></script>
+  </body>
 </html>
