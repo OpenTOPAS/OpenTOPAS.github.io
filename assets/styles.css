@@ -1,10 +1,11 @@
 :root {
-  --bg: #05070d;
-  --bg-accent: #11182a;
-  --panel: #1b2333;
+  --bg: #252a6b;
+  --bg-accent: #2e3599;
+  --panel: #8095d9;
   --accent: #2ea043;
   --text: #f0f6fc;
-  --muted: #8b949e;
+  --text2: #ffe959;
+  --muted: #b4d1f0;
   --border: rgba(240, 246, 252, 0.12);
 }
 
@@ -54,11 +55,11 @@ header {
 .navbar {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0.25rem 1.5rem;
+  padding: 0.15rem 1.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .navbar h1 {
@@ -82,20 +83,20 @@ header {
 }
 
 .logo-mark img {
-  width: 76px;
-  height: 76px;
+  width: 88px;
+  height: 88px;
   object-fit: contain;
   display: block;
 }
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.1rem;
   font-size: 0.95rem;
 }
 
 .nav-links a {
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.2rem;
   border-bottom: 2px solid transparent;
   transition: border-color 0.2s ease;
 }
@@ -174,12 +175,13 @@ header {
 }
 
 .hero h2 {
+  color: var(--text2);
   font-size: 2.5rem;
   margin: 0;
 }
 
 .hero p {
-  color: var(--muted);
+  color: var(--text);
   max-width: 640px;
 }
 

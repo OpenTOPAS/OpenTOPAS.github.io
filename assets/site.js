@@ -6,6 +6,27 @@
 
   const nav = document.querySelector('.nav-links');
   const toggle = document.querySelector('.menu-toggle');
+
+  if (nav) {
+    const navItems = [
+      { href: 'about.html', label: 'About' },
+      { href: 'download.html', label: 'Download' },
+      { href: 'documentation.html', label: 'Documentation' },
+      { href: 'news.html', label: 'News' },
+      { href: 'publications.html', label: 'Publications' },
+      { href: 'contact.html', label: 'Contact' },
+    ];
+
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    nav.innerHTML = navItems
+      .map(({ href, label }) => {
+        const isActive = currentPath === href;
+        const activeAttr = isActive ? ' aria-current="page"' : '';
+        return `<a href="${href}"${activeAttr}>${label}</a>`;
+      })
+      .join('');
+  }
+
   if (nav && toggle) {
     toggle.addEventListener('click', () => {
       const open = nav.classList.toggle('open');
