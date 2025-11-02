@@ -267,6 +267,18 @@ section:nth-of-type(odd) {
   background: rgba(22, 27, 34, 0.7);
 }
 
+.overview-card {
+  margin-bottom: 2.5rem;
+}
+
+.overview-card h2 {
+  margin: 0 0 1rem;
+}
+
+.overview-card .text-columns {
+  margin-bottom: 0;
+}
+
 .stat-card h4 {
   margin: 0 0 0.5rem;
   font-size: 1.1rem;
@@ -303,9 +315,6 @@ section:nth-of-type(odd) {
 
 .collab-card {
   padding: 1.75rem;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  background: rgba(13, 17, 23, 0.65);
 }
 
 .collab-card ul {
