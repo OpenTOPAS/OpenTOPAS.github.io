@@ -12,17 +12,25 @@
       { href: 'about.html', label: 'About' },
       { href: 'download.html', label: 'Download' },
       { href: 'documentation.html', label: 'Documentation' },
-      { href: 'news.html', label: 'News' },
+      { href: 'https://github.com/OpenTOPAS/OpenTOPAS/discussions', label: 'User Forum', external: true },
       { href: 'publications.html', label: 'Publications' },
       { href: 'contact.html', label: 'Contact' },
     ];
 
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
     nav.innerHTML = navItems
-      .map(({ href, label }) => {
-        const isActive = currentPath === href;
-        const activeAttr = isActive ? ' aria-current="page"' : '';
-        return `<a href="${href}"${activeAttr}>${label}</a>`;
+      .map(({ href, label, external }) => {
+        const isActive = !external && currentPath === href;
+        const attrs = [
+          `href="${href}"`,
+          external ? 'target="_blank"' : '',
+          external ? 'rel="noopener"' : '',
+          isActive ? 'aria-current="page"' : '',
+        ]
+          .filter(Boolean)
+          .join(' ');
+        const suffix = external ? ' <span class="external-icon" aria-hidden="true">&#8599;</span>' : '';
+        return `<a ${attrs}>${label}${suffix}</a>`;
       })
       .join('');
   }

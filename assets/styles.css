@@ -101,6 +101,18 @@ header {
   transition: border-color 0.2s ease;
 }
 
+.nav-links .external-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.25rem;
+  padding: 0.05rem 0.2rem;
+  border: 1px solid currentColor;
+  border-radius: 0.2rem;
+  font-size: 0.65rem;
+  line-height: 1;
+}
+
 .nav-links a:hover,
 .nav-links a:focus {
   border-color: var(--accent);
