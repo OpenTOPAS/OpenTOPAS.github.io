@@ -24,7 +24,7 @@
         const attrs = [
           `href="${href}"`,
           external ? 'target="_blank"' : '',
-          external ? 'rel="noopener"' : '',
+          external ? 'rel="noopener noreferrer"' : '',
           isActive ? 'aria-current="page"' : '',
         ]
           .filter(Boolean)
@@ -57,13 +57,13 @@
 
     card.addEventListener('click', (event) => {
       if (event.target.tagName === 'A') return;
-      window.open(url, '_blank', 'noopener');
+      window.open(url, '_blank', 'noopener,noreferrer');
     });
 
     card.addEventListener('keydown', (event) => {
       if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
-        window.open(url, '_blank', 'noopener');
+        window.open(url, '_blank', 'noopener,noreferrer');
       }
     });
   });
