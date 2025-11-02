@@ -218,6 +218,16 @@ section:nth-of-type(odd) {
   background: var(--panel);
 }
 
+.content-placeholder {
+  padding: 4rem 1.5rem 3rem;
+}
+
+.collaborators-section {
+  padding: 4rem 1.5rem 3rem;
+  background: var(--panel);
+  border-top: 1px solid var(--border);
+}
+
 .section-inner {
   max-width: 1100px;
   margin: 0 auto;
@@ -267,16 +277,35 @@ section:nth-of-type(odd) {
   background: rgba(22, 27, 34, 0.7);
 }
 
+.content-placeholder > h2 {
+  margin: 0 0 1.5rem;
+}
+
 .overview-card {
   margin-bottom: 2.5rem;
 }
 
-.overview-card h2 {
-  margin: 0 0 1rem;
+.overview-card .text-columns {
+  display: block;
+  margin-bottom: 0;
+  column-count: 1;
+  column-gap: 2rem;
 }
 
-.overview-card .text-columns {
+.overview-card .text-columns p {
+  max-width: none;
+  margin: 0 0 1.5rem;
+  break-inside: avoid-column;
+}
+
+.overview-card .text-columns p:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: 900px) {
+  .overview-card .text-columns {
+    column-count: 2;
+  }
 }
 
 .stat-card h4 {
