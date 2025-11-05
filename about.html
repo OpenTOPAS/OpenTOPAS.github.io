@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About | Open TOPAS</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1>
+          <a class="logo-mark" href="index.html" aria-label="Open TOPAS home">
+            <img src="assets/img/Logo.png" alt="" />
+          </a>
+        </h1>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="primary-nav" class="nav-links" aria-label="Main navigation">
+          <a href="about.html" aria-current="page">About</a>
+          <a href="download.html">Download</a>
+          <a href="documentation.html">Documentation</a>
+          <a href="https://github.com/OpenTOPAS/OpenTOPAS/discussions" target="_blank" rel="noopener">
+            User Forum <span class="external-icon" aria-hidden="true">&#8599;</span>
+          </a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="content-placeholder section-inner" aria-labelledby="about-overview">
+        <h2 id="about-overview">What is OpenTOPAS?</h2>
+        <article class="stat-card overview-card">
+          <div class="text-columns">
+            <p>
+              The NIH-funded TOPAS project made radiation therapy simulations using the Monte Carlo method easily
+              accessible for the radiotherapy community. This repository brings the code to a new, truly open
+              release stage called <strong>OpenTOPAS</strong>.
+            </p>
+            <p>
+              OpenTOPAS wraps and extends the <a href="https://geant4.web.cern.ch" target="_blank" rel="noopener">Geant4 Simulation Toolkit</a>
+              to provide an easier-to-use application for the medical physicist. The parameter control system lets physicists assemble and control a rich
+              library of simulation objects—geometry components, particle sources, scorers—without writing C++ or knowing Geant4 internals.
+              Visit the <a href="https://opentopas.readthedocs.io/en/latest" target="_blank" rel="noopener">User Guide</a> for deeper dives.
+            </p>
+            <p>
+              The project was originally created out of an NIH-funded collaboration of Massachusetts General Hospital,
+              University of California San Francisco, and SLAC National Accelerator Laboratory. Today, the UCSF and MGH teams continue
+              to maintain and expand OpenTOPAS in partnership with the Monte Carlo community.
+            </p>
+            <p>
+              OpenTOPAS supports simulation of medical applications of ionizing radiation with the Monte Carlo method.
+              Free availability is intended to aid research by medical physicists, radiobiologists, and clinicians across all radiotherapy modalities.
+              New users should review the key publications to explore its potential.
+            </p>
+          </div>
+        </article>
+
+        <div class="stat-grid">
+          <article class="stat-card">
+            <h3>Mission</h3>
+            <p>
+              Deliver a validated, community-supported Monte Carlo framework that enables accurate and efficient radiation therapy research.
+            </p>
+          </article>
+          <article class="stat-card">
+            <h3>Why Open</h3>
+            <p>
+              Full open access allows advanced users to extend the platform in C++ while benefiting from the OpenTOPAS parameter system and Geant4 flexibility.
+            </p>
+          </article>
+          <article class="stat-card">
+            <h3>Focus Areas</h3>
+            <p>
+              Proton and conventional radiotherapy, LET / RBE modelling, optical photon transport, dosimetry detectors, and radiopharmaceutical therapy.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="collaborators-section section-inner">
+        <h2>Collaborators</h2>
+        <p>
+          OpenTOPAS is jointly maintained by interdisciplinary teams at the University of California San Francisco and
+          Massachusetts General Hospital / Harvard Medical School. Each site contributes physics leadership, code
+          development, validation, and user support.
+        </p>
+
+        <div class="collab-grid">
+          <article class="collab-card stat-card">
+            <div>
+              <img class="collab-logo" src="assets/img/UCSF_logo.png" alt="University of California San Francisco logo" />
+              <h3>University of California San Francisco</h3>
+              <p class="collab-role">Core Maintainers</p>
+              <ul>
+                <li>Bruce Faddegon (PI 2018-2024)</li>
+                <li>José Ramos-Méndez</li>
+                <li>Thongchai Masilela</li>
+                <li>Naoki D-Kondo</li>
+                <li>Ramon Ortiz</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="collab-card stat-card">
+            <div>
+              <img class="collab-logo" src="assets/img/MGH-Harvard_logo.png" alt="Massachusetts General Hospital Harvard Medical School logo" />
+              <h3>Massachusetts General Hospital<br />Harvard Medical School</h3>
+              <p class="collab-role">Core Maintainers</p>
+              <ul>
+                <li>Harald Paganetti (PI 2009-2016)</li>
+                <li>Jan Schuemann</li>
+                <li>Alejandro Bertolet</li>
+                <li>Victor V. Onecha</li>
+                <li>Wook-Geun Shin</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="collab-grid former-grid">
+          <article class="collab-card stat-card">
+            <div>
+              <h3>Former Contributors · UCSF</h3>
+              <ul class="compact-list">
+                <li>Daren Sawkey</li>
+                <li>Jhonatan Carrasco Hernandez</li>
+                <li>Jungwook Shin</li>
+                <li>Kyungdon Choi</li>
+                <li>Lucas Burigo</li>
+                <li>Pierluigi Piersimoni</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="collab-card stat-card">
+            <div>
+              <h3>Former Contributors · MGH / Harvard</h3>
+              <ul class="compact-list">
+                <li>Aimee McNamara</li>
+                <li>Alejandro Carabe-Fernández</li>
+                <li>Andrea Attili</li>
+                <li>David Hall</li>
+                <li>David J Carlson</li>
+                <li>Giulia Tamborino</li>
+                <li>Hongyu Zhu</li>
+                <li>Hoyeon Lee</li>
+                <li>Hsiao-Ming Lu</li>
+                <li>Ilaria Rinaldi</li>
+                <li>Isaac Meyer</li>
+                <li>Jungwook Shin</li>
+                <li>Kira Grogg</li>
+                <li>Lisa Polster</li>
+                <li>Mauro Testa</li>
+                <li>Nils Peters</li>
+                <li>Robert Stewart</li>
+                <li>Wonmo Sung</li>
+                <li>Yizheng Chen</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <small>© <span id="year"></span> The TOPAS Collaboration</small>
+    </footer>
+    <script src="assets/site.js"></script>
+  </body>
+</html>

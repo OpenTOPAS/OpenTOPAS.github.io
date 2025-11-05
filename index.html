@@ -1,131 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOPAS - Home</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
-    <link rel="icon" href="Images/Index/LogoWhite.png" type="image/x-icon">
-  <style>
-    header {
-         background-image: url("./Images/Index/titlebackground.png");
-         background-size: cover;
-         background-position: center;
-    }
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Open TOPAS | GitHub Pages Template</title>
+    <meta name="description" content="Landing page template for the Open TOPAS GitHub Pages site." />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1>
+          <a class="logo-mark" href="index.html" aria-label="Open TOPAS home">
+            <img src="assets/img/Logo.png" alt="" />
+          </a>
+        </h1>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="primary-nav" class="nav-links" aria-label="Main navigation">
+          <a href="about.html">About</a>
+          <a href="download.html">Download</a>
+          <a href="documentation.html">Documentation</a>
+          <a href="https://github.com/OpenTOPAS/OpenTOPAS/discussions" target="_blank" rel="noopener">
+            User Forum <span class="external-icon" aria-hidden="true">&#8599;</span>
+          </a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-<--!   body {
-         font-family: Verdana, sans-serif; 
-         margin: 0;
-   } -->
-
-  </style>
-</head>
-
-<script src="navigation.js"></script>
-
-<header>
-        <h1>TOPAS</h1>
-        <h5>A Monte Carlo Simulation Tool for Physics, Biology and Clinical Research </h5>
-        <br>
-        <h3>Welcome to the TOPAS Collaboration official site!</h3>
-</header>
-
-<body>
-    <div class="maintext">
-
-
-        <p class="notice"> 
-          <b>Sign up on the TOPAS email list for important announcements</b>
-          Sign up and hear about user meetings, new releases and more: 
-            <a href="https://github.com/OpenTOPAS/OpenTOPAS/discussions/185" target="_blank"> Discussions #185 </a> 
-        </p>
-        
-        
-        <h3>What is OpenTOPAS ?</h3>
-        <p> 
-            The NIH-funded TOPAS project made radiation therapy simulations using the Monte Carlo method easily accessible 
-            for the radiotherapy community. The code has been released previously as open source. This repository brings TOPAS to a new, 
-            open release stage, called OpenTOPAS. <br><br>
-            OpenTOPAS wraps and extends the <a href="https://geant4.web.cern.ch" target="_blank"> Geant4 Simulation Toolkit </a> 
-            to provide an easier-to-use application for the medical physicist. 
-            OpenTOPAS’s unique parameter control system lets you assemble and control a rich library of simulation objects (geometry components, 
-            particle sources, scorers, etc.) with no need to write C++ code and without knowledge of the underlying Geant4 Simulation Toolkit. 
-            Please visit our <a href="https://ucsf.box.com/s/5g6n6uvi8goljpsku3z4gi6on959w4n3" target="_blank">User guide</a> for mode details.
-            <br> <br>
-            OpenTOPAS basic concepts were originally created out of an NIH-funded collaboration of Massachusetts General Hospital, University 
-            of California San Francisco, and SLAC National Accelerator Laboratory for the development of the TOPAS software. The current collaboration 
-            between University of California San Francisco and Massachusetts General Hospital continues to support and develop TOPAS under the name of 
-            OpenTOPAS since 2024.
-            <br> <br>
-            OpenTOPAS is designed for simulation of medical applications of ionizing radiation with the Monte Carlo method. The free availability of OpenTOPAS 
-            is intended to aid and stimulate research by medical physicists, radiobiologists, and clinicians with emphasis on all modalities of radiotherapy. 
-            We recommend new users look at the key publications to explore its potential.
-            <br> <br>
-            OpenTOPAS is fully open-access. Advanced users remain free to implement their own simulation objects in C++ code, and add them to 
-            OpenTOPAS via fork mechanism. While user-written extensions benefit from underlying functionality of OpenTOPAS base classes and 
-            the OpenTOPAS parameter system, they can exploit the full flexibility of Geant4.
-        </p>
-
-        <h3>Applications</h3>
-        <ul> 
-            <li> Proton therapy and conventional radiotherapy</li>
-        </ul>
-
-        <div class="image-panel">
-            <img src="./Images/Index/ProtonNeutronShielding.png" title="Proton therapy">
-            <img src="./Images/Index/LINAC2.png" title="X-ray radiotherapy">
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Official site of</h1> 
+          <h2>The TOPAS Collaboration <br>
+          </h2>
+          <p>
+            A Monte Carlo Simulation Tool <br>
+            for Physics, Biology and Clinical Research.
+          </p>
+          <div class="cta-group">
+            <a class="btn btn-primary" href="https://github.com/OpenTOPAS/OpenTOPAS" target="_blank" rel="noopener">Get the Build</a>
+            <a class="btn btn-secondary" href="https://opentopas.readthedocs.io/en/latest" target="_blank" rel="noopener">Read the Docs</a>
+            <a class="btn btn-secondary" href="https://github.com/OpenTOPAS/OpenTOPAS/discussions" target="_blank" rel="noopener">User Forum</a>
+          </div>
         </div>
-
-        <ul> 
-            <li> Radiology and optical photon transport </li>
-        </ul>
-
-        <div class="image-panel">
-            <img src="./Images/Index/Imaging.png" title="Radiology">
-            <img src="./Images/Index/OpticalPhotons.png" title="Optical photon transport">
+          <div class="carousel" aria-label="Project showcase">
+            <div class="carousel-track">
+              <img src="assets/img/Clinical_dose.png" alt="Clinical dose visualization" />
+              <img src="assets/img/Imaging.png" alt="Medical imaging workflow" />
+              <img src="assets/img/LINAC2.png" alt="Linear accelerator equipment" />
+              <img src="assets/img/ProtonNeutronShielding.png" alt="Proton and neutron shielding diagram" />
+              <img src="assets/img/IonizationChamber.png" alt="Ionization chamber setup" />
+              <img src="assets/img/MagneticField.png" alt="Magnetic field simulation" />
+              <img src="assets/img/OpticalPhotons.png" alt="Optical photon simulation" />
+            </div>
+          <button class="prev" type="button" aria-label="View previous image">‹</button>
+          <button class="next" type="button" aria-label="View next image">›</button>
         </div>
+      </section>
 
-        <ul> 
-            <li> Brachytherapy and absorbed dose in DICOM-CT </li>
-        </ul>
-
-
-        <div class="image-panel">
-            <img src="./Images/Index/EyeModel.png" title="Brachytherapy">
-            <img src="./Images/Index/Clinical_dose.png" title="Absorbed dose in DICOM-CT">
-        </div>
-
-        <ul> 
-            <li> Transport throught magnetic fields and radiation detectors</li>
-        </ul>
-
-        <div class="image-panel">
-
-            <img src="./Images/Index/MagneticField.png" title="Transport through magnetic fields">
-            <img src="./Images/Index/IonizationChamber.png" title="Ionization chambers">
-        </div>
-
-        <h3>How to cite?</h3>
-        <p> 
-            Please cite these two key references when using Open TOPAS: <br>
-            <ul>
-                <li> B Faddegon, J Ramos-Méndez, J Schümann, A McNamara, J Shin, J Perl, H Paganetti. "The TOPAS Tool for Particle Simulation, a Monte Carlo Simulation Tool for Physics, Biology and Clinical Research." Phys Med. 2020 Apr 02; 72:114-121. PMID: 32247964. PMCID: PMC7192305</li>
-                <li>Perl, J Shin, J Schümann,  B Faddegon, H Paganetti. "TOPAS: an innovative proton Monte Carlo platform for research and clinical applications." Med Phys. 2012 Nov; 39(11):6818-37.</li>
-                <br>
-            </ul>
-        </p>
-
-        <hr>
-
-        <h3> Future of the TOPAS Collaboration</h3>
+      <aside class="floating-banner" aria-label="Announcements">
         <p>
-            <p> The NIH-funded TOPAS team feels a need to address a recent addition to the <a href="https://www.topasmc.org/message-regarding-other-codes" target="_blank"> topasmc </a> website on May 6, 2024. This address can be found <a href="https://opentopas.github.io/news.html" target="_blank"> here</a>.</p>
+          Sign up on the TOPAS email list for important announcements. Hear about user meetings, new releases, and more:
+          <a href="https://github.com/OpenTOPAS/OpenTOPAS/discussions/185" target="_blank" rel="noopener">Discussions #185</a>
+        </p>
+      </aside>
 
-    </div>
-    
+      <section id="publications" class="publications-section">
+        <div class="section-inner">
+          <h3>Publications</h3>
+          <p>
+            Cite these peer-reviewed articles when referencing OpenTOPAS in your own publications.
+          </p>
+          <ol class="cite-list">
+            <li>
+              B. Faddegon, J. Ramos-Méndez, J. Schümann, A. McNamara, J. Shin, J. Perl, H. Paganetti. “The TOPAS Tool
+              for Particle Simulation, a Monte Carlo Simulation Tool for Physics, Biology and Clinical Research.”
+              <em>Phys Med.</em> 2020 Apr 02;72:114-121. PMID: 32247964. PMCID: PMC7192305.
+            </li>
+            <li>
+              J. Perl, J. Shin, J. Schümann, B. Faddegon, H. Paganetti. “TOPAS: an innovative proton Monte Carlo
+              platform for research and clinical applications.” <em>Med Phys.</em> 2012 Nov;39(11):6818-37.
+            </li>
+          </ol>
+          <p><a class="btn btn-secondary" href="publications.html">View Publications →</a></p>
+        </div>
+      </section>
+    </main>
 
-</body>
+    <footer>
+      <small>© <span id="year"></span> The TOPAS Collaboration</small>
+    </footer>
 
-<script src="footer.js"></script>
-
+    <script src="assets/site.js"></script>
+  </body>
 </html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Documentation | Open TOPAS</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1>
+          <a class="logo-mark" href="index.html" aria-label="Open TOPAS home">
+            <img src="assets/img/Logo.png" alt="" />
+          </a>
+        </h1>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="primary-nav" class="nav-links" aria-label="Main navigation">
+          <a href="about.html">About</a>
+          <a href="download.html">Download</a>
+          <a href="documentation.html" aria-current="page">Documentation</a>
+          <a href="https://github.com/OpenTOPAS/OpenTOPAS/discussions" target="_blank" rel="noopener">
+            User Forum <span class="external-icon" aria-hidden="true">&#8599;</span>
+          </a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-inner" style="padding:4rem 1.5rem 3rem;">
+        <h2>Documentation Hub</h2>
+        <p>
+          Everything you need to install, operate, and contribute to OpenTOPAS—straight from the official manuals.
+        </p>
+
+        <div class="doc-grid">
+          <article class="card span-2 link-card" data-href="https://opentopas.readthedocs.io/en/latest/" tabindex="0">
+            <h4>Official Manual</h4>
+            <p>
+              The canonical reference for physics models, geometry components, scoring functions, graphics and release notes lives on Read the Docs.
+            </p>
+            <p><a href="https://opentopas.readthedocs.io/en/latest/" target="_blank" rel="noopener">OpenTOPAS on ReadTheDocs →</a></p>
+          </article>
+
+          <div class="install-row">
+            <article class="card link-card" data-href="https://github.com/OpenTOPAS/OpenTOPAS/blob/master/OpenTOPAS_quickStart_MacOS.md" tabindex="0">
+              <h4>Install · macOS</h4>
+              <p>
+                Follow the quickstart for Apple Silicon and Intel Macs, including dependency setup and
+                validation runs.
+              </p>
+              <p><a href="https://github.com/OpenTOPAS/OpenTOPAS/blob/master/OpenTOPAS_quickStart_MacOS.md" target="_blank" rel="noopener">macOS quickstart guide →</a></p>
+            </article>
+
+            <article class="card link-card" data-href="https://github.com/OpenTOPAS/OpenTOPAS/blob/master/OpenTOPAS_quickStart_Debian.md" tabindex="0">
+              <h4>Install · Debian / Ubuntu</h4>
+              <p>
+                Step-by-step instructions for Debian-based systems, covering apt packages, Geant4 data sets, and sanity
+                tests.
+              </p>
+              <p><a href="https://github.com/OpenTOPAS/OpenTOPAS/blob/master/OpenTOPAS_quickStart_Debian.md" target="_blank" rel="noopener">Debian quickstart guide →</a></p>
+            </article>
+
+            <article class="card link-card" data-href="https://github.com/OpenTOPAS/OpenTOPAS/blob/master/OpenTOPAS_quickStart_WSL.md" tabindex="0">
+              <h4>Install · Windows WSL</h4>
+              <p>
+                Use Windows Subsystem for Linux to run OpenTOPAS on Windows with near-native performance.
+              </p>
+              <p><a href="https://github.com/OpenTOPAS/OpenTOPAS/blob/master/OpenTOPAS_quickStart_WSL.md" target="_blank" rel="noopener">WSL quickstart guide →</a></p>
+            </article>
+          </div>
+
+          <article class="card span-2" tabindex="0">
+            <h4>Contribute via Fork</h4>
+            <p>
+              Keep contributions aligned with the `develop` branch and validate them through our qi-opentopas workflow.
+            </p>
+            <ol class="doc-steps">
+              <li>Fork <code>OpenTOPAS/OpenTOPAS</code>, create a feature branch off <code>develop</code>, and sync often.</li>
+              <li>Clone your fork <br /><code>git clone https://github.com/OpenTOPAS/qi-opentopas.git</code> for QA automation.</li>
+              <li>Run qi-opentopas checks locally (build, regression, formatting) before opening a Pull Request (PR).</li>
+              <li>Open the PR against <code>develop</code>, link related issues, and describe datasets/settings used.</li>
+            </ol>
+            <p><a href="https://github.com/OpenTOPAS/qi-opentopas" target="_blank" rel="noopener">qi-opentopas repository →</a></p>
+          </article>
+
+          <article class="card span-2" tabindex="0">
+            <h4>License & Usage</h4>
+            <p>
+              OpenTOPAS is distributed under the MIT License. Review the terms to understand how you can reuse and
+              redistribute the software.
+            </p>
+            <p><a href="download.html">Read the MIT License →</a></p>
+          </article>
+
+          <article class="card span-2" tabindex="0">
+            <h4>How to Cite?</h4>
+            <p>
+              Acknowledge the TOPAS collaboration by including these references in your publications:
+            </p>
+            <ol class="cite-list">
+              <li>
+                B. Faddegon, J. Ramos-Méndez, J. Schümann, A. McNamara, J. Shin, J. Perl, H. Paganetti. “The TOPAS Tool
+                for Particle Simulation, a Monte Carlo Simulation Tool for Physics, Biology and Clinical Research.”
+                <em>Phys Med.</em> 2020;72:114-121. PMID: 32247964. PMCID: PMC7192305.
+              </li>
+              <li>
+                J. Perl, J. Shin, J. Schümann, B. Faddegon, H. Paganetti. “TOPAS: an innovative proton Monte Carlo
+                platform for research and clinical applications.” <em>Med Phys.</em> 2012;39(11):6818-37.
+              </li>
+            </ol>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <small>© <span id="year"></span> The TOPAS Collaboration</small>
+    </footer>
+    <script src="assets/site.js"></script>
+  </body>
+</html>
